@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud JS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h2>Lista de Pedidos</h2>
+    </header>
+
+    <main>
+        <button type="button" class="button" id="cadastrarCliente">Novo Pedido</button>
+        <table id="table" class="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Celular</th>
+                    <th>Modelo do avião</th>
+                    <th>Editar/Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <div class="modal-title">
+                    <h4 class="">Novo Pedido<h4>
+                </div>
+                <form class="modal-form" id="form">
+                    <input type="text" class="modal-input" id="nome" placeholder="Nome" data-index="new" required>
+                    <input type="email" class="modal-input" id="email" placeholder="Email" required>
+                    <input type="text" class="modal-input" id="telefone" placeholder="Telefone" required>
+                    <input type="text" class="modal-input" id="model" placeholder="Modelo" required>
+                </form>
+                <div class="modal-button">
+                    <button class="deleteButton" id="modalClose">Cancelar</button>
+                    <button class="editButton" id="salvar">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+
+</body>
+</html>

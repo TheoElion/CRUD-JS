@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #dad6d3;
+}
+
+header {
+    background-color: #0916A3;
+    height: 220px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+main {
+    background-color: #fff;
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.85);
+    margin: 2rem auto;
+    padding: 40px;
+    gap: 20px;
+}
+
+.button {
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: #0916A3;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0f1769;
+}
+
+.editButton {
+    background-color: #1fb6f1;
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.editButton:hover {
+    background-color: #1581ac;
+}
+
+.deleteButton {
+    background-color: #ff4947;
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: #af201e;
+}
+
+.tabela{
+    width: 100%;
+    text-align: left;
+}
+
+.tabela th {
+    height: 50px;
+    background-color: #b1adad6c;
+    padding-left: 15px;
+}
+
+.tabela td {
+    height: 50px;
+    padding-left: 15px;
+}
+
+.tabela tr:hover {
+    background-color: #d1d0d06c;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-content {
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin: 20vh auto;
+    background-color: #fff;
+}
+
+.modal-title {
+    background-color: #0f1769;
+    height: 70px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.modal-form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal-input {
+    width: 400px;
+    height: 40px;
+    outline-style: none;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.modal-button {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-button button {
+    width: 50%;
+}

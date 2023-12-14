@@ -130,8 +130,9 @@ const salvarClient = () => {
         }  else {
             updateClient(index, client);
             updateTable();
-            document.getElementById("name").dataset.index = 'new';
+            document.getElementById("nome").dataset.index = 'new';
             closeModal();
+            console.log('theo')
         }
     }
 }
